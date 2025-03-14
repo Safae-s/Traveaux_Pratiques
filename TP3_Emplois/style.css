@@ -6,15 +6,15 @@ body {
 
 table {
     width: 100%;
-    border: 3px solid black; /* Bordure noire de 3px */
+    border: 3px solid black; 
     margin-top: 20px;
-    border-collapse: collapse; /* Fusionner les bordures des cellules */
+    border-collapse: collapse; 
 }
 
 th, td {
     padding: 10px;
     text-align: center;
-    border: 2px solid black; /* Bordure noire autour des cellules */
+    border: 2px solid black; 
 }
 
 th {
@@ -30,7 +30,7 @@ td[colspan="7"] {
     background-color: #FCD5B4;
     font-weight: bold;
     font-size: 16px;
-    text-align: center; /* Centrer le texte du titre */
+    text-align: center; 
 }
 
 .title {
