@@ -1,0 +1,112 @@
+
+* {
+    margin: 2PX;
+    padding: 2PX;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+
+.cv-container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+}
+
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #dde0e4;
+    object-fit: cover;
+}
+
+
+
+h1 {
+    color: #faf8f8;
+    font-size: 32px;
+   
+}
+h4 {
+    color: #eaeaeb; /* لون أزرق واضح */
+    font-size: 20px;
+}
+h3
+{
+    color: #619aef; /* لون أزرق واضح */
+    font-size: 20px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionn.header {
+    display: flex;
+    align-items: center; /* باش يكونو في نفس المستوى */
+    gap: 20px; /* المسافة بين الصورة والنص */
+    background-color: #5b8ac4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.section {
+    margin-bottom: 25px;
+    padding: 20px;
+    border-left: 5px solid #007bff;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.email-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+
+.color-icon {
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.color-icon:hover {
+    background: #ddd;
+}
+
+
+.color-toggle {
+    display: none;
+}
+
+/* تغيير الألوان عند التفعيل */
+.color-toggle:checked ~ .cv-container .section {
+    background-color: wheat; /* اللون الجديد */
+    border-left: 5px solid #5b8ac4; /* تغيير لون الحد */
+}
