@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border: 3px solid black; /* Bordure noire de 3px */
+    margin-top: 20px;
+    border-collapse: collapse; /* Fusionner les bordures des cellules */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black; /* Bordure noire autour des cellules */
+}
+
+th {
+    background-color: #5F79A0;
+    color: white;
+}
+
+td {
+    background-color: #fff;
+}
+
+td[colspan="7"] {
+    background-color: #FCD5B4;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center; /* Centrer le texte du titre */
+}
+
+.title {
+    background-color: #FCD5B4;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.title1 {
+    background-color: #fff;
+    
+}
+td.dynamic-programming, td.génie-logiciel, td.ihm, td.modelisation {
+    background-color: #FCD5B4;
+}
+
+.header {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.day {
+    background-color: #E4EEF8;
+}
