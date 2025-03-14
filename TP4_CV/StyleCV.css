@@ -1,0 +1,99 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+
+.cv-container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+}
+
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #dde0e4;
+    object-fit: cover;
+}
+
+
+h1 {
+    color: #f1f8e9;
+    font-size: 32px;
+}
+h3 {
+    color: #f1f8e9;
+    font-size: 20px;
+}
+
+
+.sectionn {
+    background-color: #5b8ac4;
+    padding: 20px;
+    height: 160px;
+    border-radius: 8px;
+}
+
+
+.section {
+    margin-bottom: 25px;
+    padding: 20px;
+    border-left: 5px solid #007bff;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.email-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+
+.color-icon {
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.color-icon:hover {
+    background: #ddd;
+}
+
+
+.color-toggle {
+    display: none;
+}
+
+
+.color-toggle:checked ~ .cv-container .section {
+    background-color: #d1e8ff; /* اللون الجديد */
+    border-left: 5px solid #ff4081; /* تغيير لون الحد */
+}
