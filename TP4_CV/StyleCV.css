@@ -39,12 +39,12 @@ h1 {
    
 }
 h4 {
-    color: #eaeaeb; /* لون أزرق واضح */
+    color: #eaeaeb; 
     font-size: 20px;
 }
 h3
 {
-    color: #619aef; /* لون أزرق واضح */
+    color: #619aef; 
     font-size: 20px;
 }
 
@@ -55,8 +55,8 @@ h3
 
 .sectionn.header {
     display: flex;
-    align-items: center; /* باش يكونو في نفس المستوى */
-    gap: 20px; /* المسافة بين الصورة والنص */
+    align-items: center; 
+    gap: 20px; 
     background-color: #5b8ac4;
     padding: 20px;
     border-radius: 8px;
@@ -105,8 +105,8 @@ h3
     display: none;
 }
 
-/* تغيير الألوان عند التفعيل */
+
 .color-toggle:checked ~ .cv-container .section {
-    background-color: wheat; /* اللون الجديد */
-    border-left: 5px solid #5b8ac4; /* تغيير لون الحد */
+    background-color: wheat;
+    border-left: 5px solid #5b8ac4; 
 }
