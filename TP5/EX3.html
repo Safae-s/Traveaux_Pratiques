@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Interactif</title>
+</head>
+<body>
+    <h2>Quiz Interactif</h2>
+    <button onclick="lancerQuiz()">Démarrer le Quiz</button>
+
+    <p id="resultat"></p>
+
+    <script>
+        // 1. Tableau des questions et réponses correctes
+        const QUESTIONS = [
+            ["Quelle est la capitale de la France ?", "Paris"],
+            ["Combien de continents existe-t-il ?", "7"],
+            ["Quelle est la couleur du ciel par temps clair ?", "bleu"],
+            ["Quel est le résultat de 3 + 5 ?", "8"],
+            ["Dans quel pays se trouve la Tour Eiffel ?", "France"]
+        ];
+
+        // 2. Fonction principale pour lancer le quiz
+        function lancerQuiz() {
+            let score = 0;
+
+            for (let i = 0; i < QUESTIONS.length; i++) {
+                let question = QUESTIONS[i][0];
+                let bonneReponse = QUESTIONS[i][1].toLowerCase();
+
+                let reponseUtilisateur = prompt(question);
+                
+                if (reponseUtilisateur) {
+                    if (reponseUtilisateur.toLowerCase().trim() === bonneReponse) {
+                        alert("Réponse juste !");
+                        score++;
+                    } else {
+                        alert("Réponse fausse !");
+                    }
+                } else {
+                    alert("Aucune réponse donnée !");
+                }
+            }
+
+            // 4. Affichage du résultat final
+            let resultat = `Vous avez répondu correctement à ${score} question(s) sur ${QUESTIONS.length}.`;
+            document.getElementById("resultat").innerText = resultat;
+        }
+    </script>
+</body>
+</html>

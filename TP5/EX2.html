@@ -1,0 +1,41 @@
+<!--Exercice 2 :
+Faites un programme qui permet à l'utilisateur de deviner un nombre entre 1 et 10 choisi par
+l'ordinateur au hasard en indiquant à chaque proposition (lue avec la fonction prompt) si le
+nombre à deviner est plus grand ou plus petit que la proposition. Lorsque le nombre est trouvé
+vous afficherez le « score » c'est à dire le nombre de tentatives nécessaires pour arriver à la
+solution.-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu de Deviner un Nombre</title>
+</head>
+<body>
+    <h2>Ouvre la console pour jouer !</h2>
+</body>
+<script>
+    // L'ordinateur choisit un nombre au hasard entre 1 et 10
+    let nombreSecret = Math.floor(Math.random() * 10) + 1;
+    let tentative = 0;
+    let devine = false;
+
+    while (!devine) {
+        let proposition = parseInt(prompt("Devine un nombre entre 1 et 10 :"));
+        tentative++;
+
+        if (proposition === nombreSecret) {
+            alert(`Bravo ! Tu as trouvé le nombre ${nombreSecret} en ${tentative} tentative(s).`);
+            devine = true;
+        } else if (proposition < nombreSecret) {
+            alert("C'est plus grand !");
+        } else if (proposition > nombreSecret) {
+            alert("C'est plus petit !");
+        } else {
+            alert("Veuillez entrer un nombre valide !");
+        }
+    }
+
+    console.log(`Nombre secret était : ${nombreSecret}`);
+    console.log(`Nombre de tentatives : ${tentative}`);
+</script>
+</html>

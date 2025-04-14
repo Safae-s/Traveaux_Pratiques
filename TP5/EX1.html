@@ -1,0 +1,35 @@
+
+
+<!--Écrivez un script JavaScript qui demande à l'utilisateur de saisir deux nombres, puis affiche la
+somme, la différence, le produit et le quotient de ces deux nombres dans la console.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Résultats :</h2>
+    <div id="resultats"></div>
+</body>
+</html>
+
+
+<script>
+    let nombre1 = parseFloat(prompt("Entrez le premier nombre :"));
+    let nombre2 = parseFloat(prompt("Entrez le deuxième nombre :"));
+
+    let somme = nombre1 + nombre2;
+    let difference = nombre1 - nombre2;
+    let produit = nombre1 * nombre2;
+    let quotient = nombre2 !== 0 ? (nombre1 / nombre2) : "Division par zéro impossible";
+
+    let resultats = `
+        Somme : ${somme} <br>
+        Différence : ${difference} <br>
+        Produit : ${produit} <br>
+        Quotient : ${quotient}
+    `;
+    document.getElementById("resultats").innerHTML = resultats;
+</script>
