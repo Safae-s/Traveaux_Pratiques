@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Formulaire d'inscription</h2>
+        <form action="enregistrer.php" method="post">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="groupe">Groupe:</label>
+            <input type="number" id="groupe" name="groupe" value="02">
+
+            <label for="sujet">Sujet:</label>
+            <input type="text" id="sujet" name="sujet">
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <label for="date_debut">Date de début:</label>
+            <input type="date" id="date_debut" name="date_debut">
+
+            <label for="date_fin">Date de fin:</label>
+            <input type="date" id="date_fin" name="date_fin">
+
+            <label for="encadrant">Encadrant:</label>
+            <select id="encadrant" name="encadrant">
+                <option value="">-- Choisir un encadrant --</option>
+                <option value="Prof A">Prof A</option>
+                <option value="Prof B">Prof B</option>
+                <option value="Prof C">Prof C</option>
+                <option value="Prof D">Prof D</option>
+                <option value="Prof E">Prof E</option>
+            </select>
+
+            <div class="buttons">
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Annuler">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

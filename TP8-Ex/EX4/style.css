@@ -1,0 +1,5 @@
+body { font-family: Arial; background-color: #f8f8f8; padding: 50px; }
+form { background: white; max-width: 400px; margin: auto; padding: 30px; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+input, button { width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; }
+button { background-color: #28a745; color: white; border: none; }
+.erreur { color: red; text-align: center; margin-top: 10px; }
